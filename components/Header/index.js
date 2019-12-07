@@ -10,11 +10,16 @@
 // And add it to the DOM in the .header-container component
 
 function mainHeader(newsPageTop) {
-    const header1 = document.querySelector('.header div');
-    const date1 = document.querySelector('.date span');
-    const headTitle = document.querySelector('h1');
-    const temp1 = document.querySelector('.temp span');
+    const header1 = document.createElement('div');
+    const date1 = document.createElement('span');
+    const headTitle = document.createElement('h1');
+    const temp1 = document.createElement('span');
     const hContainer = document.querySelector('.header-container');
+    
+    header1.classList.add("header");
+    date1.classList.add("date");
+    temp1.classList.add("temp");
+    
     hContainer.appendChild(header1);
     header1.appendChild(date1);
     header1.appendChild(headTitle);
@@ -26,23 +31,5 @@ function mainHeader(newsPageTop) {
   
 return header1;
 }
+mainHeader()
 
-// header1.forEach(header1 => {
-//     hContainer.appendChild(mainHeader)
-// });
-// const hContainer = mainHeader('.header-container');
-// hContainer.appendChild(header1);
-
-// const dogImg = document.querySelector('.card-img-top');
-
-// dogImg.src = 'https://images.unsplash.com/photo-1499789853431-fcbf274f57b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ';
-
-// dogImg.alt = "dogs rule";
-
-// const title = document.querySelector('h2');
-// title.textContent = " Dogs are amazing"
-
-
-    // header1.classList.add('header');
-    // date1.classList.add('date');
-    // temp1.classList.add('temp');
